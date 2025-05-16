@@ -19,7 +19,7 @@ set format y ''
 set offset 0,0,0.5,0.5
 
 timefmt="%d-%b-%Y"
-time0=strptime(timefmt,"01-Jan-2022")
+time0=strptime(timefmt,"01-Jan-2025")
 set xdata time
 set grid xtics
 set xtics out
@@ -32,16 +32,16 @@ set yrange [0:]
 set multiplot layout 2, 2
 
 set title "MSS1.SHZ RSAM"
-plot '/mnt/earthworm3/monitoring_data/rsam/2022_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
+plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
 
 set title "MBLY.EHZ RSAM"
-plot '/mnt/earthworm3/monitoring_data/rsam/2022_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
+plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
 
 set title "MBGH.EHZ RSAM"
-plot '/mnt/earthworm3/monitoring_data/rsam/2022_rsam_MBGH_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
+plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBGH_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
 
 set title "MBLG.EHZ RSAM"
-plot '/mnt/earthworm3/monitoring_data/rsam/2022_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
+plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
 
 unset multiplot
 

@@ -34,8 +34,6 @@ set mxtics 6
 set multiplot layout 3, 1 title "RSAM - last 5 days - UTC"
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MSS1.SHZ" with lines
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLG.EHZ" with lines
-#plot '/mnt/earthworm3/monitoring_data/rsam/2024_rsam_MBHA_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBHA.SHZ" with lines
-#plot '/mnt/earthworm3/monitoring_data/rsam/2024_rsam_MBWH_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBWH.SHZ" with lines
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLY.EHZ" with lines
 unset multiplot
 
@@ -46,8 +44,6 @@ set xrange [ time(0)-2*24*60*60 : time(0)+60*60 ]
 set multiplot layout 3, 1 title "RSAM - last 2 days - UTC"
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MSS1.SHZ" with lines
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLG.EHZ" with lines
-#plot '/mnt/earthworm3/monitoring_data/rsam/2024_rsam_MBHA_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBHA.SHZ" with lines
-#plot '/mnt/earthworm3/monitoring_data/rsam/2024_rsam_MBWH_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBWH.SHZ" with lines
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLY.EHZ" with lines
 unset multiplot
 
@@ -58,8 +54,6 @@ set xrange [ time(0)-10*24*60*60 : time(0)+60*60 ]
 set multiplot layout 3, 1 title "RSAM - last 10 days - UTC"
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MSS1.SHZ" with lines
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLG.EHZ" with lines
-#plot '/mnt/earthworm3/monitoring_data/rsam/2024_rsam_MBHA_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBHA.SHZ" with lines
-#plot '/mnt/earthworm3/monitoring_data/rsam/2024_rsam_MBWH_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBWH.SHZ" with lines
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLY.EHZ" with lines
 unset multiplot
 
@@ -70,7 +64,5 @@ set xrange [ time(0)-24*60*60 : time(0)+60*60 ]
 set multiplot layout 3, 1 title "RSAM - last day - UTC"
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MSS1.SHZ" with lines
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLG.EHZ" with lines
-#plot '/mnt/earthworm3/monitoring_data/rsam/2024_rsam_MBHA_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBHA.SHZ" with lines
-#plot '/mnt/earthworm3/monitoring_data/rsam/2024_rsam_MBWH_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBWH.SHZ" with lines
 plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLY.EHZ" with lines
 unset multiplot

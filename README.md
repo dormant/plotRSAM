@@ -2,6 +2,9 @@
 
 Gnuplot scripts for plotting RSAM data.
 
+## Important note
+
+All these scripts need to be edited at the turn of the year.
 
 ## plot_rsam_here.plt
 
@@ -10,8 +13,12 @@ Gnuplot scripts for plotting RSAM data.
 
 ## plot_rsam.plt, plot_rsam_multi.plt
 
-* Create plots accessed through *notWebobs*.
-* Run every 5 minutes as cronjob on *opsproc3*. 
+* Create plots accessed through *notWebobs*: : http://webobs.mvo.ms:8080/mvofls2/monitoring_data/rsam/plots/.
+* Run every 5 minutes as cronjob on *opsproc3*.
+```
+# Create plots of recent RSAM
+*/5 * * * * /usr/bin/gnuplot /home/seisan/src/plotRSAM/plot_rsam.plt >/dev/null 2>&1; /usr/bin/gnuplot /home/seisan/src/plotRSAM/plot_rsam_multi.plt >/dev/null 2>&1
+```
 
 ## plot_rsam_rt.gp, plot_rsam_rt_lahar.gp
 

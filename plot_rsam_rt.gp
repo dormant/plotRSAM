@@ -5,7 +5,9 @@
 #
 # R.C. Stewart, 8-Apr-2021
 
-set terminal qt title "RSAM - last 2 days - LIVE" size 2400,900 position 2600,0 font ",24"
+yr=`date +'%Y'`
+
+set terminal qt title "SP RSAM - last 2 days - LIVE" size 2400,900 position 2600,0 font ",24"
 set style line 1 lw 3
 
 #set timestamp "%Y-%m-%d %H:%M UTC-4" font ",10"
@@ -19,7 +21,7 @@ set format y ''
 set offset 0,0,0.5,0.5
 
 timefmt="%d-%b-%Y"
-time0=strptime(timefmt,"01-Jan-2022")
+time0=strptime(timefmt,"01-Jan-2025")
 set xdata time
 set grid xtics
 set xtics out
@@ -32,12 +34,10 @@ set yrange [0:]
 set multiplot layout 2, 1
 
 set title "MSS1.SHZ RSAM"
-plot '/mnt/earthworm3/monitoring_data/rsam/2022_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
-#plot '/mnt/earthworm3/monitoring_data/rsam/2022_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1 > 0 ? $1 : NaN) with lines ls 1
+plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
 
-set title "MBHA.SHZ RSAM"
-plot '/mnt/earthworm3/monitoring_data/rsam/2022_rsam_MBHA_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
-#plot '/mnt/earthworm3/monitoring_data/rsam/2022_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
+set title "MBLY.SHZ RSAM"
+plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
 
 unset multiplot
 
