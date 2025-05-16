@@ -29,22 +29,23 @@ set xtics 4*60*60
 
 set yrange [0:]
 
-set multiplot layout 2, 2
+while (1){
+    set multiplot layout 2, 2
 
-set title "MSS1.SHZ RSAM"
-plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
+    set title "MSS1.SHZ RSAM"
+    plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
 
-set title "MBLY.EHZ RSAM"
-plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
+    set title "MBLY.EHZ RSAM"
+    plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
 
-set title "MBGH.EHZ RSAM"
-plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBGH_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
+    set title "MBGH.EHZ RSAM"
+    plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBGH_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
 
-set title "MBLG.EHZ RSAM"
-plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
+    set title "MBLG.EHZ RSAM"
+    plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1
 
-unset multiplot
+    unset multiplot
 
-pause 60
-reread
+    pause 60
 
+}
