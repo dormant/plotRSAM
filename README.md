@@ -20,11 +20,12 @@ All these scripts need to be edited at the turn of the year.
 */5 * * * * /usr/bin/gnuplot /home/seisan/src/plotRSAM/plot_rsam.plt >/dev/null 2>&1; /usr/bin/gnuplot /home/seisan/src/plotRSAM/plot_rsam_multi.plt >/dev/null 2>&1
 ```
 
-## plot_rsam_rt.gp, plot_rsam_rt_lahar.gp
+## plot_rsam_rt.gp, plot_rsam_rt_lahar.gp, plot_rsam_rt_multi.gp
 
 * Real time plots of RSAM data.
 * *plot_rsam_rt.gp* shows last two days of data.
 * *plot_rsam_rt_lahar.gp* shows last 12 hours of data.
+* *plot_rsam_rt_multi.gp* shows last 2 days of data for Radian stations.
 * Runs on one of display computers in Ops Room.
 
 ## Author
