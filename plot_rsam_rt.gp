@@ -34,7 +34,7 @@ set yrange [0:]
 while (1) {
 
     set xrange [ time(0)-2*24*60*60 : time(0)+60*60 ]
-    set multiplot layout 4, 1 margins 0.1, 0.9, 0.1, 0.9 spacing 0.05
+    set multiplot layout 4, 1 margins 0.01, 0.99, 0.1, 0.99 spacing 0.05
 
     set title "MSS1.SHZ RSAM" font ", 12" offset 0,-1.5
     plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 with lines ls 1 
