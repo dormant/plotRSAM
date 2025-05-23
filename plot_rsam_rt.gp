@@ -25,7 +25,6 @@ time0=strptime(timefmt,"01-Jan-2025")
 set xdata time
 set grid xtics
 set xtics out
-set xrange [ time(0)-2*24*60*60 : time(0)+60*60 ]
 set xtics 4*60*60
 set xtics font ", 12"
 
@@ -33,6 +32,8 @@ set xtics font ", 12"
 set yrange [0:]
 
 while (1) {
+
+    set xrange [ time(0)-2*24*60*60 : time(0)+60*60 ]
     set multiplot layout 4, 1
 
     set title "MSS1.SHZ RSAM" font ", 12" offset 0,-0.5
