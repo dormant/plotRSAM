@@ -28,7 +28,6 @@ set xtics out
 set xtics 4*60*60
 set xtics font ", 12"
 
-
 set yrange [0:]
 
 while (1) {
