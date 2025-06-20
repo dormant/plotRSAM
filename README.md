@@ -2,7 +2,7 @@
 
 ## ~/src/plotRSAM
 
-Gnuplot scripts for plotting RSAM data. XX
+Gnuplot scripts for plotting RSAM data.
 
 ## Important note
 
