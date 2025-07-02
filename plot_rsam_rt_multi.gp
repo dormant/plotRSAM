@@ -41,6 +41,7 @@ while (1) {
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLG.EHZ" with lines linewidth 2 ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLY.EHZ" with lines linewidth 2 ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBBY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*3) title "MBBY.EHZ" with lines linewidth 2 ,\
+	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBHA_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*3) title "MBHA.EHZ" with lines linewidth 2 ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBGH_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*3) title "MBGH.EHZ" with lines linewidth 2 ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBWH_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*3) title "MBWH.EHZ" with lines linewidth 2 ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBFL_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBFL.EHZ" with lines linewidth 2

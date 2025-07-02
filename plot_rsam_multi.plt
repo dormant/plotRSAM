@@ -37,6 +37,7 @@ plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary 
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLG.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLY.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBRY_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*2) title "MBRY.SHZ" with lines ,\
+	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBHA_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*2) title "MBHA.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBWH_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*3) title "MBWH.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBFL_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBFL.EHZ" with lines
 
@@ -49,6 +50,7 @@ plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary 
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLG.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLY.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBRY_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*2) title "MBRY.SHZ" with lines ,\
+	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBHA_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*2) title "MBHA.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBWH_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*3) title "MBWH.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBFL_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBFL.EHZ" with lines
 
@@ -61,5 +63,6 @@ plot '/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MSS1_SHZ_60sec.dat' binary 
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLG_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLG.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBLY_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBLY.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBRY_SHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*2) title "MBRY.SHZ" with lines ,\
+	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBHA_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*2) title "MBHA.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBWH_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):($1*3) title "MBWH.EHZ" with lines ,\
 	'/mnt/earthworm3/monitoring_data/rsam/2025_rsam_MBFL_EHZ_60sec.dat' binary format="%int32" using (time0+$0*60.):1 title "MBFL.EHZ" with lines
